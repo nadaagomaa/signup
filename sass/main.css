@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "nanitosans-reguler";
+  src: url("../assets/fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "nanitosans-semibold";
+  src: url("../assets/fonts/NunitoSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "nanitosans-bold";
+  src: url("../assets/fonts/NunitoSans-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+.common-styles, body .content .main-content .step-3 form .group-btns .btn-option, .general-styles form .form-control, body .content .main-content .step-4 form .form-control, body .content .main-content .step-3 form .form-control, body .content .main-content .step-2 form .form-control, body .content .main-content .step-1 form .form-control {
+  height: 50px;
+  border-radius: 14px;
+  border-color: #D8E0F0;
+  box-shadow: 0px 1px 2px rgba(184, 200, 224, 0.2235294118);
+}
+
+.general-styles, body .content .main-content .step-4, body .content .main-content .step-3, body .content .main-content .step-2, body .content .main-content .step-1 {
+  width: 403px;
+  height: 700px;
+}
+.general-styles .step-number, body .content .main-content .step-4 .step-number, body .content .main-content .step-3 .step-number, body .content .main-content .step-2 .step-number, body .content .main-content .step-1 .step-number {
+  font-family: "nanitosans-bold";
+  font-size: 14px;
+  color: #3F8CFF;
+}
+.general-styles .step-title, body .content .main-content .step-4 .step-title, body .content .main-content .step-3 .step-title, body .content .main-content .step-2 .step-title, body .content .main-content .step-1 .step-title {
+  margin-block: 25px;
+  font-family: "nanitosans-bold";
+  font-size: 22px;
+  color: #0A1629;
+}
+.general-styles form p, body .content .main-content .step-4 form p, body .content .main-content .step-3 form p, body .content .main-content .step-2 form p, body .content .main-content .step-1 form p {
+  font-family: "nanitosans-bold";
+  font-size: 14px;
+  color: #7D8592;
+  margin-bottom: 10px;
+}
+.general-styles form .form-control, body .content .main-content .step-4 form .form-control, body .content .main-content .step-3 form .form-control, body .content .main-content .step-2 form .form-control, body .content .main-content .step-1 form .form-control {
+  font-family: "nanitosans-bold";
+  font-size: 14px;
+  color: #7D8592;
+}
+.general-styles form .form-control::-moz-placeholder, body .content .main-content .step-4 form .form-control::-moz-placeholder, body .content .main-content .step-3 form .form-control::-moz-placeholder, body .content .main-content .step-2 form .form-control::-moz-placeholder, body .content .main-content .step-1 form .form-control::-moz-placeholder {
+  font-family: "nanitosans-reguler";
+  font-size: 14px;
+  color: #7D8592;
+}
+.general-styles form .form-control::placeholder, body .content .main-content .step-4 form .form-control::placeholder, body .content .main-content .step-3 form .form-control::placeholder, body .content .main-content .step-2 form .form-control::placeholder, body .content .main-content .step-1 form .form-control::placeholder {
+  font-family: "nanitosans-reguler";
+  font-size: 14px;
+  color: #7D8592;
+}
+.general-styles form .form-control:focus, body .content .main-content .step-4 form .form-control:focus, body .content .main-content .step-3 form .form-control:focus, body .content .main-content .step-2 form .form-control:focus, body .content .main-content .step-1 form .form-control:focus {
+  color: #0A1629;
+  border-color: #3F8CFF;
+  box-shadow: 0px 1px 7px #3F8CFF;
+  outline: 0;
+}
+
+body {
+  background-color: #F4F9FD;
+  padding: 20px;
+}
+body .content .side-content {
+  background-color: #3F8CFF;
+  padding-top: 60px;
+  padding-inline: 40px;
+  width: 30%;
+  border-radius: 24px;
+}
+body .content .side-content .logo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 12px;
+}
+body .content .side-content .logo .fill-3 {
+  position: absolute;
+  top: 9px;
+  left: 24px;
+}
+body .content .side-content .logo .fill-2 {
+  position: absolute;
+  top: 19px;
+  left: 15px;
+}
+body .content .side-content .logo .fill-4 {
+  position: absolute;
+  top: 26px;
+  left: 7px;
+}
+body .content .side-content .get-started-section .get-started-header {
+  font-family: "nanitosans-bold";
+  font-size: 36px;
+  margin-block: 60px;
+}
+body .content .side-content .get-started-section .steps .step {
+  font-family: "nanitosans-semibold";
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3019607843);
+}
+body .content .side-content .get-started-section .steps.active .step, body .content .side-content .get-started-section .steps.done .step {
+  color: white;
+}
+body .content .side-content .get-started-section .steps .circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3019607843);
+  border-radius: 50%;
+  margin-inline-end: 20px;
+}
+body .content .side-content .get-started-section .steps.done .circle {
+  background-color: white;
+  background-image: url("../assets/imgs/done.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .content .side-content .get-started-section .steps.active .circle {
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  border-color: white;
+}
+body .content .side-content .get-started-section .virtical-line {
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  height: 26px;
+  width: 0px;
+  margin-inline-start: 11px;
+  margin-block: 4px;
+}
+body .content .side-content .get-started-section .virtical-line.active {
+  border-color: white;
+}
+body .content .main-content {
+  position: relative;
+  margin-inline: 30px;
+  padding-top: 75px;
+  width: 70%;
+  border-radius: 24px;
+  box-shadow: 0px 6px 58px rgba(196, 203, 214, 0.1019607843);
+}
+body .content .main-content .step-2, body .content .main-content .step-3, body .content .main-content .step-4 {
+  display: none;
+}
+body .content .main-content .step-1 form .form-select {
+  width: 74px;
+  height: 50px;
+}
+body .content .main-content .step-1 form .sms-section {
+  width: 280px;
+}
+body .content .main-content .step-1 form .sms-section input {
+  width: 58px;
+}
+body .content .main-content .step-1 form .alert {
+  background-color: #F4F9FD;
+  border-radius: 14px;
+}
+body .content .main-content .step-1 form .alert .alert-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3F8CFF;
+  position: relative;
+}
+body .content .main-content .step-1 form .alert .alert-icon .part-1 {
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  border-radius: 5px;
+}
+body .content .main-content .step-1 form .alert .alert-icon .part-2 {
+  background-color: white;
+  width: 2px;
+  height: 6px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  border-radius: 5px;
+}
+body .content .main-content .step-1 form .alert .alert-text {
+  font-family: "nanitosans-reguler";
+  font-size: 14px;
+  color: #3F8CFF;
+}
+body .content .main-content .step-1 form .pass-input-group {
+  position: relative;
+}
+body .content .main-content .step-1 form .pass-input-group .eye-icons {
+  position: absolute;
+  top: 8.5px;
+  right: 20px;
+}
+body .content .main-content .step-1 form .pass-input-group .eye-icons .bi {
+  font-family: "nanitosans-bold";
+  font-size: 24px;
+  color: #7D8592;
+}
+body .content .main-content .step-2 form .form-check .form-check-input {
+  border: 2px solid #0A1629;
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+}
+body .content .main-content .step-2 form .form-check .form-check-input:checked {
+  background-color: transparent;
+  background-image: url("../assets/imgs/fill.svg");
+  background-size: 60%;
+  background-position: center;
+}
+body .content .main-content .step-2 form .form-check .form-check-input label {
+  font-family: "nanitosans-reguler";
+  font-size: 16px;
+  color: #0A1629;
+}
+body .content .main-content .step-3 form .group-btns .btn-option {
+  width: 89px;
+  font-family: "nanitosans-reguler";
+  font-size: 14px;
+  color: #7D8592;
+  cursor: default;
+}
+body .content .main-content .step-3 form .group-btns .btn-option:hover {
+  border-color: #8ea5d4;
+}
+body .content .main-content .step-3 form .group-btns .btn-option.active {
+  background-color: #3F8CFF;
+  color: white;
+}
+body .content .main-content .step-4 form .add-another-member {
+  font-family: "nanitosans-semibold";
+  font-size: 16px;
+  color: #3F8CFF;
+  cursor: default;
+}
+body .content .main-content hr {
+  width: 100%;
+  height: 1px;
+  color: #E4E6E8;
+}
+body .content .main-content .prev-next-buttons {
+  width: 95%;
+}
+body .content .main-content .prev-next-buttons .prev-button {
+  color: #3F8CFF;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "nanitosans-semibold";
+  font-size: 16px;
+  height: 48px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 58px rgba(196, 203, 214, 0.1019607843);
+  visibility: hidden;
+}
+body .content .main-content .prev-next-buttons .prev-button.visible {
+  visibility: visible;
+}
+body .content .main-content .prev-next-buttons .next-button {
+  color: white;
+  background-color: #3F8CFF;
+  font-family: "nanitosans-semibold";
+  font-size: 16px;
+  height: 48px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 12px rgba(63, 140, 255, 0.262745098);
+}/*# sourceMappingURL=main.css.map */

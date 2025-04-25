@@ -1,0 +1,39 @@
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+@mixin border-styles($radius,$color){
+    border-radius: $radius;
+    border-color: $color;  
+}
+@mixin box-shadow($x,$y,$blur,$color){
+    box-shadow: $x $y $blur $color;
+}
+@mixin logo-parts($top,$left){
+    position: absolute;
+    top: $top;
+    left:$left;
+}
+@mixin fontandsize ($font-family,$size){
+    font-family: $font-family;
+    font-size: $size;
+}
+@mixin text($font-family,$size,$color)
+{
+    font-family: $font-family;
+    font-size: $size;
+    color: $color;
+}
+@mixin placeholder{
+    &::placeholder{
+        @include text($nanitosans-reguler,$size-14px,$labelandtext-color)
+    }
+}
+@mixin buttonstyles($color,$bg-color){
+    color: $color;
+    background-color: $bg-color;
+    font-family: $nanitosans-semibold;
+    font-size: $size-16px;
+    height: 48px;
+    @include border-radius($defult-radius);
+    
+}
