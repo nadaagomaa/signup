@@ -4,9 +4,6 @@
 @import "../sass/extends";
 body{
     font-family: $nanitosans-reguler, sans-serif;
-    .steps-list{
-        padding-inline-start: 0;
-    }
     .content{
             background-color: $bg-color;
             padding: 20px;
@@ -25,49 +22,53 @@ body{
                         @include fontandsize($nanitosans-bold,$size-36px);
                         margin-block: 60px;
                     }
-                    .steps{
-                        .step{
-                            @include fontandsize($nanitosans-semibold,$size-18px);
-                            color: $inactive-step;  
-                        }
-                        &.active,&.done {
-                            .step {
-                                color: white; 
+                    .steps-list{
+                        padding-inline-start: 0;
+                        .steps{
+                            .step{
+                                @include fontandsize($nanitosans-semibold,$size-18px);
+                                color: $inactive-step;  
                             }
-                        }
-                        
-                        .circle{
-                            width: 24px;
-                            height: 24px;
-                            border:2px solid $inactive-step;
-                            @include border-radius(50%);
-                            margin-inline-end: 20px; 
-                        }
-                        &.done{
+                            &.active,&.done {
+                                .step {
+                                    color: white; 
+                                }
+                            }
+                            
                             .circle{
-                                background-color: white;
-                                background-image:url("../assets/imgs/done.svg") ;
-                                background-repeat: no-repeat;
-                                background-position: center;
+                                width: 24px;
+                                height: 24px;
+                                border:2px solid $inactive-step;
+                                @include border-radius(50%);
+                                margin-inline-end: 20px; 
+                            }
+                            &.done{
+                                .circle{
+                                    background-color: white;
+                                    background-image:url("../assets/imgs/done.svg") ;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                            &.active {
+                                .circle {
+                                    background-color: $inactive-step;
+                                    border-color: white;
+                                }
                             }
                         }
-                        &.active {
-                            .circle {
-                                background-color: $inactive-step;
+                        .virtical-line{
+                            border :1px solid $inactive-step;
+                            height: 26px;
+                            width: 0px;
+                            margin-inline-start: 11px;
+                            margin-block: 4px;
+                            &.active {
                                 border-color: white;
-                            }
+                            }  
                         }
                     }
-                    .virtical-line{
-                        border :1px solid $inactive-step;
-                        height: 26px;
-                        width: 0px;
-                        margin-inline-start: 11px;
-                        margin-block: 4px;
-                        &.active {
-                            border-color: white;
-                          }  
-                    }
+                   
                 }        
             }
             .main-content{
