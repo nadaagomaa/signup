@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    prevButton.classList.toggle('visible', currentStep > 1);
+    prevButton.classList.toggle('shown', currentStep > 1);
     nextButton.style.display =
       currentStep === steps.length ? 'none' : 'inline-block';
   }
@@ -81,11 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       togglePassword.classList.add('disabled-icon');
  
-      if (password.getAttribute('type') === 'text') {
-        password.setAttribute('type', 'password');
-        eyeIcon.classList.remove('d-none');
-        eyeSlashIcon.classList.add('d-none');
-      }
+      
     }
   }
   password.addEventListener('input', updateIconState);
@@ -103,15 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
     eyeSlashIcon.classList.toggle('d-none');
   });
 
-  // button Option of Step 3
-  document.querySelectorAll('.btn-option').forEach(button => {
-    button.addEventListener('click', () => {
-      document
-        .querySelectorAll('.btn-option')
-        .forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-      document.getElementById('selectedOption').value = button.dataset.value;
-    });
-  });
   updateUI();
 });

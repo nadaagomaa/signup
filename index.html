@@ -12,201 +12,211 @@
 </head>
 <body>
     <div class="content d-flex">
-            <div class="side-content ">
-                <div class="logo bg-white ">
-                    <img src="assets/imgs/Company's logo/Fill 2.svg" class="fill-2" alt="logo">
-                    <img src="assets/imgs/Company's logo/Fill 3.svg" class="fill-3" alt="logo" >
-                    <img src="assets/imgs/Company's logo/Fill 4.svg" class="fill-4" alt="logo">
-                </div>
-                <div class="get-started-section  d-flex flex-column ">
-                    <h3 class="get-started-header text-white">
-                        Get started
-                    </h3>
-                    <div class="steps d-flex align-items-center">
-                        <span class="circle"></span>
-                        <span class="step">Valid your phone</span>
-                    </div>
-                    <div class="virtical-line"> </div>
-                    <div class="steps d-flex align-items-center">
-                        <span class="circle"></span>
-                        <span class="step">Tell about yourself</span>
-                    </div>
-                    <div class="virtical-line"> </div>
-                    <div class="steps d-flex align-items-center">
-                        <span class="circle"></span>
-                        <span class="step">Tell about your company</span>
-                    </div>
-                    <div class="virtical-line "> </div>
-                    <div class="steps d-flex align-items-center">
-                        <span class="circle"></span>
-                        <span class="step">Invite Team Members</span>
-                    </div>
-                </div>
+        <div class="side-content ">
+            <div class="logo ">
+                <img src="assets/imgs/logo.svg"> 
             </div>
-            <div class="main-content bg-white d-flex flex-column align-items-center">
-                <div class="step-1">
-                    <span class="step-number d-block text-center">Step 1/4</span>
-                    <h2 class="step-title text-center ">Valid your phone</h2>
-                    <form>
-                        <div class="form-group mb-4">
-                            <p>Mobile Number</p>
-                            <div class="d-flex">
-                                <div class="number me-3">
-                                    <select class="form-select form-control" >
-                                     <option value="1" >+1</option>
-                                     <option value="2">+2</option>
-                                      <option value="3">+3</option>   
-                                    </select>
-                                </div>
-                                <input type="tel" class="form-control " id="mobileNumber" placeholder="345-567-23-56">
+            <div class="get-started-section  d-flex flex-column ">
+                <h3 class="get-started-header text-white">
+                    Get started
+                </h3>
+                <ul class="steps-list ">
+                    <li class="steps d-flex align-items-center">
+                      <span class="circle"></span>
+                      <span class="step">Valid your phone</span>
+                    </li>
+                    <div class="virtical-line"> </div>
+                    <li class="steps d-flex align-items-center">
+                      <span class="circle"></span>
+                      <span class="step">Tell about yourself</span>
+                    </li>
+                    <div class="virtical-line"> </div>
+                    <li class="steps d-flex align-items-center">
+                      <span class="circle"></span>
+                      <span class="step">Tell about your company</span>
+                    </li>
+                    <div class="virtical-line"> </div>
+                    <li class="steps d-flex align-items-center">
+                      <span class="circle"></span>
+                      <span class="step">Invite Team Members</span>
+                    </li>
+                  </ul>
+                  
+            </div>
+        </div>
+        <div class="main-content bg-white d-flex flex-column align-items-center">
+            <div class="step-1 flex-grow-1">
+                <span class="step-number d-block text-center">Step 1/4</span>
+                <h2 class="step-title text-center ">Valid your phone</h2>
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="label">Mobile Number</label>
+                        <div class="d-flex">
+                            <div class="number me-3">
+                                <select class="form-select form-control label" >
+                                 <option value="1" >+1</option>
+                                 <option value="2">+2</option>
+                                  <option value="3">+3</option>   
+                                </select>
+                            </div>
+                            <input type="tel" class="form-control " id="mobileNumber" placeholder="345-567-23-56">
+                        </div>
+                    </div>
+                    <div class="form-group  ">
+                        <label class="label">Code from SMS</label>
+                        <div class="sms-section d-flex justify-content-between  ">
+                            <input type="text" class="form-control text-center " maxlength="1" placeholder="1">
+                            <input type="text" class="form-control text-center " maxlength="1" placeholder="2">
+                            <input type="text" class="form-control text-center " maxlength="1" placeholder="3">
+                            <input type="text" class="form-control text-center " maxlength="1" placeholder="4">
+                        </div>
+                        <div class="alert d-flex py-4 my-4" role="alert">
+                            <div class="alert-icon mx-2 me-3 ">
+                                <span class="part-1 "></span>
+                                <span class="part-2 "></span>
+                            </div>
+                            <div class="alert-text">
+                                SMS was sent to your number +1 345 673-56-67<br>
+                                It will be valid for 01:25
                             </div>
                         </div>
-                        <div class="form-group  ">
-                            <p>Code from SMS</p>
-                            <div class="sms-section d-flex justify-content-between  ">
-                                <input type="text" class="form-control text-center " maxlength="1" placeholder="1">
-                                <input type="text" class="form-control text-center " maxlength="1" placeholder="2">
-                                <input type="text" class="form-control text-center " maxlength="1" placeholder="3">
-                                <input type="text" class="form-control text-center " maxlength="1" placeholder="4">
-                            </div>
-                            <div class="alert d-flex py-4 my-4" role="alert">
-                                <div class="alert-icon mx-2 me-3 ">
-                                    <span class="part-1 "></span>
-                                    <span class="part-2 "></span>
-                                </div>
-                                <div class="alert-text">
-                                    SMS was sent to your number +1 345 673-56-67<br>
-                                    It will be valid for 01:25
-                                </div>
-                            </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="label">Email Address</label>
+                        <input type="email" class="form-control " placeholder="youremail@gmail.com">
+                        <label class="label mt-4">Create Password</label>
+                        <div class="pass-input-group">
+                            <input type="password" class="form-control" id="password" placeholder="••••••••" aria-label="Password">
+                            <span class="eye-icons disabled-icon" id="togglePassword" >
+                              <i class="bi bi-eye" id="eyeIcon"></i>
+                              <i class="bi bi-eye-slash d-none" id="eyeSlashIcon"></i>
+                            </span>
                         </div>
-                        <div class="form-group ">
-                            <p>Email Address</p>
-                            <input type="email" class="form-control " placeholder="youremail@gmail.com">
-                            <p class="mt-4">Create Password</p>
-                            <div class="pass-input-group">
-                                <input type="password" class="form-control" id="password" placeholder="••••••••" aria-label="Password">
-                                <span class="eye-icons disabled-icon" id="togglePassword" >
-                                  <i class="bi bi-eye" id="eyeIcon"></i>
-                                  <i class="bi bi-eye-slash d-none" id="eyeSlashIcon"></i>
-                                </span>
-                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="step-2 flex-grow-1">
+                <span class="step-number d-block text-center">Step 2/4</span>
+                <h2 class="step-title text-center ">Tell about yourself</h2>
+                <form>
+                    <div class="form-group  mb-4">
+                        <label class="label">Why will you use the service?</label>
+                        <div>
+                                <select class="form-select form-control" >
+                                 <option value="work" >Work</option>  
+                                </select>
                         </div>
-                    </form>
-                </div>
-                <div class="step-2">
-                    <span class="step-number d-block text-center">Step 2/4</span>
-                    <h2 class="step-title text-center ">Tell about yourself</h2>
-                    <form>
-                        <div class="form-group  mb-4">
-                            <p >Why will you use the service?</p>
-                            <div class="d-flex">
-                                    <select class="form-select form-control" >
-                                     <option value="work" >Work</option>  
-                                    </select>
-                            </div>
+                    </div>
+                    <div class="form-group  mb-4">
+                        <label class="label">What describes you best??</label>
+                        <div>
+                                <select class="form-select form-control" >
+                                 <option value="work" >Business Owner</option>  
+                                </select>
                         </div>
-                        <div class="form-group  mb-4">
-                            <p >What describes you best??</p>
-                            <div class="d-flex">
-                                    <select class="form-select form-control" >
-                                     <option value="work" >Business Owner</option>  
-                                    </select>
-                            </div>
+                    </div>
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <label class="label mb-0">What describes you best?</label>
+                        <div class="form-check ">
+                            <input class="form-check-input me-3" type="radio" name="exampleRadios" id="yesRadio" value="option1">
+                            <label class="form-check-label" for="yesRadio">
+                             Yes
+                            </label>
                         </div>
-                        <div class="form-group d-flex justify-content-between align-items-center">
-                            <p class="mb-0">What describes you best?</p>
-                            <div class="form-check ">
-                                <input class="form-check-input me-3" type="radio" name="exampleRadios" id="yesRadio" value="option1">
-                                <label class="form-check-label" for="yesRadio">
-                                 Yes
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input me-3" type="radio" name="exampleRadios" id="noRadio" value="option2">
-                                <label class="form-check-label" for="noRadio">
-                                 No
-                                </label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input me-3" type="radio" name="exampleRadios" id="noRadio" value="option2">
+                            <label class="form-check-label" for="noRadio">
+                             No
+                            </label>
                         </div>
-                    </form>
-                </div>
-                <div class="step-3">
-                    <span class="step-number d-block text-center">Step 3/4</span>
-                    <h2 class="step-title text-center ">Tell about your company</h2>
-                    <form>
-                        <div class="form-group mb-4">
-                            <p>Your Company’s Name</p>
-                            <input type="text" class="form-control" placeholder="Company’s Name">
+                    </div>
+                </form>
+            </div>
+            <div class="step-3 flex-grow-1">
+                <span class="step-number d-block text-center">Step 3/4</span>
+                <h2 class="step-title text-center ">Tell about your company</h2>
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="label">Your Company’s Name</label>
+                        <input type="text" class="form-control" placeholder="Company’s Name">
+                    </div>
+                    <div class="form-group  mb-4">
+                        <label class="label">Business Direction</label>
+                        <div>
+                                <select class="form-select form-control" >
+                                 <option value="option-1" >IT and programming</option>  
+                                </select>
                         </div>
-                        <div class="form-group  mb-4">
-                            <p >Business Direction</p>
-                            <div class="d-flex">
-                                    <select class="form-select form-control" >
-                                     <option value="option-1" >IT and programming</option>  
-                                    </select>
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <p>How many people in your team?</p>
-                            
-                            <div class="d-flex mb-2 justify-content-between group-btns mb-3 ">
-                                <button type="button" class="btn btn-option p-1" data-value="1">Only me</button>
-                              
-                                <button type="button" class="btn btn-option p-1" data-value="2">2 - 5</button>
-                                <button type="button" class="btn btn-option p-1" data-value="3">6 - 10</button>
-                              
-                                <button type="button" class="btn btn-option p-1" data-value="4">11-20</button>
-                            </div>
-                              
-                            <div class="d-flex justify-content-between group-btns ">
-                                <button type="button" class="btn btn-option p-1" data-value="5">21 - 40</button>
-                              
-                                <button type="button" class="btn btn-option p-1 " data-value="6">41 - 50</button>
-                              
-                                <button type="button" class="btn btn-option p-1" data-value="7">51 - 100</button>
-                                <button type="button" class="btn btn-option p-1" data-value="8">101 - 500</button>
-                            </div>
-  
-                        </div>
-                        <input type="hidden" name="selectedOption" id="selectedOption">
-                    </form>
-
-                </div>
-                <div class="step-4">
-                    <span class="step-number d-block text-center">Step 4/4</span>
-                    <h2 class="step-title text-center ">
-                        Invite Team Members
-                    </h2>
-                    <form>
-                        <div class="form-group ">
-                            <p>Member’s Email</p>
-                            <input type="email" class="form-control mb-4 " placeholder="memberemail@gmail.com">
-                            <button type="button" class="btn add-another-member border-0">
-                                <img src="assets/imgs/add.svg" class="me-2 mb-1" alt="add-icon"> Add another Member
-                            </button>       
-                        </div>
-                    </form>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">How many people in your team?</label>
+                        <div class="group-btns mb-3 " role="group" aria-label="Team size">
+                            <div class="d-flex justify-content-between mb-3 gap-3">
+                                <input type="radio" class="btn-check" name="teamSize" id="team1" autocomplete="off" value="1">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team1">Only me</label>
+            
+                            <input type="radio" class="btn-check" name="teamSize" id="team2" autocomplete="off" value="2">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team2">2 - 5</label>
                     
+                            <input type="radio" class="btn-check" name="teamSize" id="team3" autocomplete="off" value="3">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team3">6 - 10</label>
+                    
+                            <input type="radio" class="btn-check" name="teamSize" id="team4" autocomplete="off" value="4">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team4">11 - 20</label>
+                            </div>
+                            <div class="d-flex justify-content-between gap-3">
+                                <input type="radio" class="btn-check" name="teamSize" id="team5" autocomplete="off" value="5">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team5">21 - 40</label>
+                    
+                            <input type="radio" class="btn-check" name="teamSize" id="team6" autocomplete="off" value="6">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team6">41 - 50</label>
+                    
+                            <input type="radio" class="btn-check" name="teamSize" id="team7" autocomplete="off" value="7">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team7">51 - 100</label>
+                    
+                            <input type="radio" class="btn-check" name="teamSize" id="team8" autocomplete="off" value="8">
+                            <label class="btn btn-option  flex-fill d-flex align-items-center justify-content-center p-1" for="team8">101 - 500</label>
+                            </div>   
+                        </div>
+                    </div>   
+                </form>
 
-                </div>
-                <hr>
-               <div class="prev-next-buttons d-flex justify-content-between mb-3">
+            </div>
+            <div class="step-4 flex-grow-1">
+                <span class="step-number d-block text-center">Step 4/4</span>
+                <h2 class="step-title text-center ">
+                    Invite Team Members
+                </h2>
+                <form>
+                    <div class="form-group ">
+                        <label class="label">Member’s Email</label>
+                        <input type="email" class="form-control mb-4 " placeholder="memberemail@gmail.com">
+                        <button type="button" class="btn add-another-member border-0">
+                            <img src="assets/imgs/add.svg" class="me-2 mb-1" alt="add-icon"> Add another Member
+                        </button>       
+                    </div>
+                </form>
                 
-                    <button class="prev-button border-0">
-                       <i class="bi bi-arrow-left"></i> 
-                        Previous
-                    </button>
-                    <button class=" next-button border-0 px-3">   
+
+            </div>
+            <div class="bottom-section ">
+                <hr>
+                <div class="prev-next-buttons  d-flex justify-content-between mb-3 mx-5"> 
+                    <div>
+                        <button class="prev-button  border-0 ">
+                        <i class="bi bi-arrow-left"></i> 
+                         Previous
+                     </button>
+                    </div>
+                    <div><button class=" next-button border-0 px-3 ">   
                         Next Step
                       <i class="bi bi-arrow-right"></i>  
-                    </button>
-                
-               </div>
-                
-            </div>
-            
-    </div>  
+                    </button> 
+                    </div>    
+                </div>
+            </div>      
+        </div>   
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>

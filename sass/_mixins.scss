@@ -8,11 +8,6 @@
 @mixin box-shadow($x,$y,$blur,$color){
     box-shadow: $x $y $blur $color;
 }
-@mixin logo-parts($top,$left){
-    position: absolute;
-    top: $top;
-    left:$left;
-}
 @mixin fontandsize ($font-family,$size){
     font-family: $font-family;
     font-size: $size;
@@ -23,9 +18,14 @@
     font-size: $size;
     color: $color;
 }
+@mixin text-sizeandcolor($size,$color)
+{
+    font-size: $size;
+    color: $color;
+}
 @mixin placeholder{
     &::placeholder{
-        @include text($nanitosans-reguler,$size-14px,$labelandtext-color)
+        @include text-sizeandcolor($size-14px,$labelandtext-color)
     }
 }
 @mixin buttonstyles($color,$bg-color){

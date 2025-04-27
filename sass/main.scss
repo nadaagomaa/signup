@@ -3,230 +3,229 @@
 @import "../sass/mixins";
 @import "../sass/extends";
 body{
-    background-color: $bg-color;
-    padding: 20px;
+    font-family: $nanitosans-reguler, sans-serif;
+    .steps-list{
+        padding-inline-start: 0;
+    }
     .content{
-        .side-content{
-            background-color: $primary-color;
-            padding-top: 60px;
-            padding-inline: 40px;
-            width: 30%;  
-            @include border-radius($sections-radius);
-            .logo{
-                width: 50px;
-                height: 50px;
-                position: relative;
-                @include border-radius($logo-radius);
-                .fill-3{
-                    @include logo-parts(9px,24px);
+            background-color: $bg-color;
+            padding: 20px;
+            min-height: 100vh;
+            .side-content{
+                background-color: $primary-color;
+                padding-top: 60px;
+                padding-inline: 40px;
+                width: 30%;  
+                @include border-radius($sections-radius);
+                .logo{
+                    @include border-radius($logo-radius);
                 }
-                .fill-2{
-                    @include logo-parts(19px,15px);
-                }
-                .fill-4{
-                    @include logo-parts(26px,7px);
-                }
-            }
-            .get-started-section{
-                .get-started-header{
-                    @include fontandsize($nanitosans-bold,$size-36px);
-                    margin-block: 60px;
-                }
-                .steps{
-                    .step{
-                        @include fontandsize($nanitosans-semibold,$size-18px);
-                        color: $inactive-step;  
+                .get-started-section{
+                    .get-started-header{
+                        @include fontandsize($nanitosans-bold,$size-36px);
+                        margin-block: 60px;
                     }
-                    &.active,&.done {
-                        .step {
-                            color: white; 
+                    .steps{
+                        .step{
+                            @include fontandsize($nanitosans-semibold,$size-18px);
+                            color: $inactive-step;  
                         }
-                    }
-                    
-                    .circle{
-                        width: 24px;
-                        height: 24px;
-                        border:2px solid $inactive-step;
-                        @include border-radius(50%);
-                        margin-inline-end: 20px; 
-                    }
-                    &.done{
+                        &.active,&.done {
+                            .step {
+                                color: white; 
+                            }
+                        }
+                        
                         .circle{
-                            background-color: white;
-                            background-image:url("../assets/imgs/done.svg") ;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                        }
-                    }
-                    &.active {
-                        .circle {
-                            background-color: $inactive-step;
-                            border-color: white;
-                        }
-                    }
-                }
-                .virtical-line{
-                    border :1px solid $inactive-step;
-                    height: 26px;
-                    width: 0px;
-                    margin-inline-start: 11px;
-                    margin-block: 4px;
-                    &.active {
-                        border-color: white;
-                      }  
-                }
-            }        
-        }
-        .main-content{
-            position: relative;
-            margin-inline: 30px;
-            padding-top: 75px;
-            width: 70%;
-            @include border-radius($sections-radius);
-            @include box-shadow(0px,6px,58px,$main-content-shadow);
-            .step-2, .step-3, .step-4 {
-                display: none;
-              }
-            .step-1{
-                @extend .general-styles;
-                form{   
-                    .form-select{
-                        width: 74px;
-                        height: 50px;       
-                    }    
-                    .sms-section{
-                        width: 280px;
-                        input{
-                            width: 58px;
-                        }
-                    }                    
-                    .alert{   
-                        background-color: $bg-color;
-                        @include border-radius($defult-radius);
-                        .alert-icon{
-                            width: 20px;
-                            height: 20px;
+                            width: 24px;
+                            height: 24px;
+                            border:2px solid $inactive-step;
                             @include border-radius(50%);
-                            background-color:$primary-color;
+                            margin-inline-end: 20px; 
+                        }
+                        &.done{
+                            .circle{
+                                background-color: white;
+                                background-image:url("../assets/imgs/done.svg") ;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                        }
+                        &.active {
+                            .circle {
+                                background-color: $inactive-step;
+                                border-color: white;
+                            }
+                        }
+                    }
+                    .virtical-line{
+                        border :1px solid $inactive-step;
+                        height: 26px;
+                        width: 0px;
+                        margin-inline-start: 11px;
+                        margin-block: 4px;
+                        &.active {
+                            border-color: white;
+                          }  
+                    }
+                }        
+            }
+            .main-content{
+                position: relative;
+                margin-inline: 30px;
+                padding-top: 75px;
+                width: 70%;
+                @include border-radius($sections-radius);
+                @include box-shadow(0px,6px,58px,$main-content-shadow);
+                .step-2, .step-3, .step-4 {
+                    display: none;
+                  }
+                .step-1{
+                    @extend .general-styles;
+                    form{   
+                        .form-select{
+                            width: 74px;
+                            height: 48px;       
+                        }    
+                        .sms-section{
+                            width: 280px;
+                            input{
+                                width: 58px;
+                            }
+                        }                    
+                        .alert{   
+                            background-color: $bg-color;
+                            @include border-radius($defult-radius);
+                            .alert-icon{
+                                width: 20px;
+                                height: 20px;
+                                @include border-radius(50%);
+                                background-color:$primary-color;
+                                position: relative;
+                                .part-1{
+                                    background-color: white;
+                                    width: 2px;
+                                    height: 2px;
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 9px;
+                                    @include border-radius(5px);
+                                }
+                                .part-2{
+                                    background-color: white;
+                                    width: 2px;
+                                    height: 6px;
+                                    position: absolute;
+                                    top:9px;
+                                    left: 9px;
+                                    @include border-radius(5px);
+                                }
+                            }
+                            .alert-text{
+                                @include text($nanitosans-semibold,$size-14px,$primary-color);
+                            }
+                           
+                        }
+                        .pass-input-group{
                             position: relative;
-                            .part-1{
-                                background-color: white;
-                                width: 2px;
-                                height: 2px;
+                            .eye-icons{
                                 position: absolute;
-                                top: 5px;
-                                left: 9px;
-                                @include border-radius(5px);
-                            }
-                            .part-2{
-                                background-color: white;
-                                width: 2px;
-                                height: 6px;
-                                position: absolute;
-                                top:9px;
-                                left: 9px;
-                                @include border-radius(5px);
+                                top:8.5px;
+                                right: 20px;
+                                .bi{
+                                    @include text($nanitosans-bold,24px,$labelandtext-color);
+                                    cursor: pointer; 
+                                }
                             }
                         }
-                        .alert-text{
-                            @include text($nanitosans-reguler,$size-14px,$primary-color);
-                        }
-                       
+    
+                        
                     }
-                    .pass-input-group{
-                        position: relative;
-                        .eye-icons{
-                            position: absolute;
-                            top:8.5px;
-                            right: 20px;
-                            .bi{
-                                @include text($nanitosans-bold,24px,$labelandtext-color); 
-                            }
-                        }
-                    }
-
                     
                 }
-                
-            }
-            .step-2{
-                @extend .general-styles;
-                form{
-                    .form-check{    
-                        .form-check-input {
-                            border: 2px solid $secondary-color;
-                            width: 20px;
-                            height: 20px;
-                            box-shadow: none;
-                            &:checked{
-                                background-color: transparent;
-                                background-image: url("../assets/imgs/fill.svg");
-                                background-size: 60%;
-                                background-position:  center;
+                .step-2{
+                    @extend .general-styles;
+                    form{
+                        .form-check{    
+                            .form-check-input {
+                                border: 3px solid $secondary-color;
+                                width: 20px;
+                                height: 20px;
+                                box-shadow: none;
+                                &:checked{
+                                    background-color: transparent;
+                                    background-image: url("../assets/imgs/fill.svg");
+                                    background-size: 10px 10px;
+                                    background-position:  2px 2px;
+                                    
+                                }
                             }
-                            label{
-                                @include text ($nanitosans-reguler,$size-16px,$secondary-color);
+                            .form-check-label{
+                                @include text-sizeandcolor ($size-16px,$secondary-color);
+                            
                             }
                         }
-                       
-                    }
-                } 
-            }
-            .step-3{
-                @extend .general-styles; 
-                form{
-                    .group-btns{
-                        .btn-option{
-                            width: 89px;
-                            @extend .common-styles  ; 
-                            @include text($nanitosans-reguler,$size-14px,$labelandtext-color);
-                            &:hover{
-                                border-color:darken($border-color, $amount: 20%)
+                    } 
+                }
+                .step-3{
+                    @extend .general-styles; 
+                    form{
+                        .group-btns{
+                            .btn-option{
+                                width: 24%;
+                                @extend .common-styles  ; 
+                                @include text-sizeandcolor($size-14px,$labelandtext-color);
+                                &:hover{
+                                    border-color:darken($border-color, $amount: 20%)
+                                }
+                               
+                                cursor:default;
                             }
-                            &.active{
+                            .btn-check:checked + .btn-option{
                                 background-color: $primary-color;
                                 color: white;
                             }
-                            cursor:default;
+                        }    
+                    }  
+                }
+                .step-4{
+                    @extend .general-styles;
+                    form{
+                        .add-another-member {
+                            @include text($nanitosans-semibold,$size-16px,$primary-color);
+                            cursor: default;
+                        
                         }
-                    } 
-                    
-                }  
-        
-            }
-            .step-4{
-                @extend .general-styles;
-                form{
-                    .add-another-member {
-                        @include text($nanitosans-semibold,$size-16px,$primary-color);
-                        cursor: default;
-                    
+                    }  
+                }
+                .bottom-section{
+                    width: 100%;
+                    margin-top:60px;
+                    hr{
+                        width: 100%;
+                        height: 1px;
+                        color: $bottom-line-color;
                     }
-                }  
-            }
-            hr{
-                width: 100%;
-                height: 1px;
-                color: $bottom-line-color;
-            }
-            .prev-next-buttons{
-                width: 95%;
-                .prev-button{
-                    @include buttonstyles($primary-color,$prev-button-bg);
-                    @include box-shadow(0px,6px ,58px ,$main-content-shadow );
-                    visibility: hidden;
-                    &.visible {
-                        visibility: visible;
-                      }     
-                }
-                .next-button{
-                    @include buttonstyles(white,$primary-color);
-                    @include box-shadow(0px,6px ,12px ,$next-btn-shadow )
+                    .prev-next-buttons{
+                        .prev-button{
+                            @include buttonstyles($primary-color,$prev-button-bg);
+                            @include box-shadow(0px,6px ,58px ,$main-content-shadow );
+                            display: none;
+                            &.shown {
+                                display: inline-block;
+                              }     
+                            }
+                        .prev-hidden{
+                            justify-content: flex-end;
+                        }
+                        .next-button{
+                            @include buttonstyles(white,$primary-color);
+                            @include box-shadow(0px,6px ,12px ,$next-btn-shadow )
+                        }
+                       
+                    }
                 }
             }
-
-        }
-
-    }
     
+    }
 }
