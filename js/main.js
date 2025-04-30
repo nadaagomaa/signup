@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const steps = document.querySelectorAll(
     '.step-1, .step-2, .step-3, .step-4'
   );
-  const circles = document.querySelectorAll('.get-started-section .circle');
-  const sideSteps = document.querySelectorAll('.get-started-section .steps');
+  const circles = document.querySelectorAll('.steps-list .circle');
+  const sideSteps = document.querySelectorAll('.steps-list .steps');
   const lines = document.querySelectorAll('.virtical-line');
   const prevButton = document.querySelector('.prev-button');
   const nextButton = document.querySelector('.next-button');
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         line.classList.add('active');
       }
     });
+    
 
     circles.forEach((circle, i) => {
       circle.classList.remove('active', 'done');
@@ -45,6 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
         circle.classList.add('active');
       }
     });
+    
+  const stepNums = document.querySelectorAll('.steps-num .step-num');
+  stepNums.forEach((stepNum, i) => {
+    stepNum.classList.remove('active', 'done');
+    if (i < currentStep - 1) {
+      stepNum.classList.add('done');
+    } else if (i === currentStep - 1) {
+      stepNum.classList.add('active');
+    }
+  });
 
     prevButton.classList.toggle('shown', currentStep > 1);
     nextButton.style.display =

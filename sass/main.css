@@ -14,14 +14,30 @@
   font-style: normal;
 }
 .common-styles, body .content .main-content .step-3 form .group-btns .btn-option, .general-styles form .form-control, body .content .main-content .step-4 form .form-control, body .content .main-content .step-3 form .form-control, body .content .main-content .step-2 form .form-control, body .content .main-content .step-1 form .form-control {
-  height: 48px;
   border-radius: 14px;
   border-color: #D8E0F0;
   box-shadow: 0px 1px 2px rgba(184, 200, 224, 0.2235294118);
 }
+@media (min-width: 576px) {
+  .common-styles, body .content .main-content .step-3 form .group-btns .btn-option, .general-styles form .form-control, body .content .main-content .step-4 form .form-control, body .content .main-content .step-3 form .form-control, body .content .main-content .step-2 form .form-control, body .content .main-content .step-1 form .form-control {
+    height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .common-styles, body .content .main-content .step-3 form .group-btns .btn-option, .general-styles form .form-control, body .content .main-content .step-4 form .form-control, body .content .main-content .step-3 form .form-control, body .content .main-content .step-2 form .form-control, body .content .main-content .step-1 form .form-control {
+    height: 40px;
+  }
+}
 
-.general-styles, body .content .main-content .step-4, body .content .main-content .step-3, body .content .main-content .step-2, body .content .main-content .step-1 {
-  width: 403px;
+@media (min-width: 576px) {
+  .general-styles, body .content .main-content .step-4, body .content .main-content .step-3, body .content .main-content .step-2, body .content .main-content .step-1 {
+    width: 403px;
+  }
+}
+@media (max-width: 575.98px) {
+  .general-styles, body .content .main-content .step-4, body .content .main-content .step-3, body .content .main-content .step-2, body .content .main-content .step-1 {
+    width: 80%;
+  }
 }
 .general-styles .step-number, body .content .main-content .step-4 .step-number, body .content .main-content .step-3 .step-number, body .content .main-content .step-2 .step-number, body .content .main-content .step-1 .step-number {
   font-family: "nanitosans-bold";
@@ -62,115 +78,212 @@
 body {
   font-family: "nanitosans-reguler", sans-serif;
 }
-body .steps-list {
-  padding-inline-start: 0;
-}
 body .content {
   background-color: #F4F9FD;
-  padding: 20px;
   min-height: 100vh;
+}
+@media (min-width: 992px) {
+  body .content {
+    padding: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  body .content {
+    padding: 10px;
+  }
 }
 body .content .side-content {
   background-color: #3F8CFF;
-  padding-top: 60px;
-  padding-inline: 40px;
-  width: 30%;
   border-radius: 24px;
 }
-body .content .side-content .logo {
-  border-radius: 12px;
+@media (min-width: 992px) {
+  body .content .side-content {
+    width: 30%;
+    padding-block: 60px;
+    padding-inline: 40px;
+  }
 }
-body .content .side-content .get-started-section .get-started-header {
-  font-family: "nanitosans-bold";
-  font-size: 36px;
-  margin-block: 60px;
+@media (max-width: 991.98px) {
+  body .content .side-content {
+    width: 100%;
+    padding-block: 30px;
+    padding-inline: 10px;
+  }
 }
-body .content .side-content .get-started-section .steps .step {
+@media (max-width: 991.98px) {
+  body .content .side-content .logo-title .get-started-header {
+    margin-block: 0;
+    margin-inline-start: 30px;
+  }
+}
+@media (min-width: 992px) {
+  body .content .side-content .logo-title .get-started-header {
+    margin-block: 60px;
+  }
+}
+@media (min-width: 575.98px) {
+  body .content .side-content .logo-title .get-started-header {
+    font-family: "nanitosans-bold";
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  body .content .side-content .logo-title .get-started-header {
+    font-family: "nanitosans-bold";
+    font-size: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  body .content .side-content .logo-title {
+    margin-block-end: 25px;
+  }
+}
+@media (min-width: 992px) {
+  body .content .side-content .logo-title {
+    margin-block: 0;
+  }
+}
+body .content .side-content .steps-list {
+  padding-inline-start: 0;
+}
+body .content .side-content .steps-list .steps .step {
   font-family: "nanitosans-semibold";
   font-size: 18px;
   color: rgba(255, 255, 255, 0.3019607843);
 }
-body .content .side-content .get-started-section .steps.active .step, body .content .side-content .get-started-section .steps.done .step {
+body .content .side-content .steps-list .steps.active .step, body .content .side-content .steps-list .steps.done .step {
   color: white;
 }
-body .content .side-content .get-started-section .steps .circle {
+body .content .side-content .steps-list .steps .circle {
   width: 24px;
   height: 24px;
   border: 2px solid rgba(255, 255, 255, 0.3019607843);
   border-radius: 50%;
-  margin-inline-end: 20px;
 }
-body .content .side-content .get-started-section .steps.done .circle {
+@media (min-width: 992px) {
+  body .content .side-content .steps-list .steps .circle {
+    margin-inline-end: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  body .content .side-content .steps-list .steps .circle {
+    margin-inline-end: 0;
+  }
+}
+body .content .side-content .steps-list .steps.done .circle {
   background-color: white;
   background-image: url("../assets/imgs/done.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-body .content .side-content .get-started-section .steps.active .circle {
+body .content .side-content .steps-list .steps.active .circle {
   background-color: rgba(255, 255, 255, 0.3019607843);
   border-color: white;
 }
-body .content .side-content .get-started-section .virtical-line {
+body .content .side-content .steps-list .virtical-line {
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
-  height: 26px;
-  width: 0px;
-  margin-inline-start: 11px;
-  margin-block: 4px;
+  list-style: none;
 }
-body .content .side-content .get-started-section .virtical-line.active {
+body .content .side-content .steps-list .virtical-line.active {
   border-color: white;
 }
+@media (min-width: 992px) {
+  body .content .side-content .steps-list .virtical-line {
+    height: 26px;
+    width: 0px;
+    margin-inline-start: 11px;
+    margin-block: 4px;
+  }
+}
+@media (max-width: 991.98px) {
+  body .content .side-content .steps-list .virtical-line {
+    height: 0px;
+    width: 40px;
+    margin-block: auto;
+  }
+}
+body .content .side-content .steps-num {
+  list-style: none;
+  padding-inline-start: 5px;
+}
+body .content .side-content .steps-num .step-num.active, body .content .side-content .steps-num .step-num.done {
+  color: white;
+}
+@media (min-width: 575.98px) {
+  body .content .side-content .steps-num .step-num {
+    font-family: "nanitosans-bold";
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3019607843);
+  }
+}
+@media (max-width: 576px) {
+  body .content .side-content .steps-num .step-num {
+    font-family: "nanitosans-bold";
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3019607843);
+  }
+}
 body .content .main-content {
-  position: relative;
-  margin-inline: 30px;
-  padding-top: 75px;
-  width: 70%;
   border-radius: 24px;
   box-shadow: 0px 6px 58px rgba(196, 203, 214, 0.1019607843);
+}
+@media (min-width: 992px) {
+  body .content .main-content {
+    margin-inline: 30px 10px;
+    width: 70%;
+    padding-inline: 40px;
+    padding-top: 75px;
+  }
+}
+@media (max-width: 991.98px) {
+  body .content .main-content {
+    margin-inline: 0;
+    margin-top: 10px;
+    width: 100%;
+    padding-inline: 10px;
+    padding-top: 30px;
+  }
 }
 body .content .main-content .step-2, body .content .main-content .step-3, body .content .main-content .step-4 {
   display: none;
 }
 body .content .main-content .step-1 form .form-select {
-  width: 74px;
-  height: 48px;
+  cursor: pointer;
 }
-body .content .main-content .step-1 form .sms-section {
-  width: 280px;
+@media (min-width: 576px) {
+  body .content .main-content .step-1 form .form-select {
+    width: 74px;
+    height: 48px;
+  }
 }
-body .content .main-content .step-1 form .sms-section input {
-  width: 58px;
+@media (max-width: 575.98px) {
+  body .content .main-content .step-1 form .form-select {
+    width: 55px;
+    height: 40px;
+  }
 }
-body .content .main-content .step-1 form .alert {
+@media (min-width: 576px) {
+  body .content .main-content .step-1 form .sms-section {
+    width: 280px;
+  }
+  body .content .main-content .step-1 form .sms-section input {
+    width: 58px;
+  }
+}
+@media (max-width: 575.98px) {
+  body .content .main-content .step-1 form .sms-section {
+    width: 60%;
+  }
+  body .content .main-content .step-1 form .sms-section input {
+    width: 40px;
+  }
+}
+body .content .main-content .step-1 form .info {
   background-color: #F4F9FD;
   border-radius: 14px;
 }
-body .content .main-content .step-1 form .alert .alert-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #3F8CFF;
-  position: relative;
-}
-body .content .main-content .step-1 form .alert .alert-icon .part-1 {
-  background-color: white;
-  width: 2px;
-  height: 2px;
-  position: absolute;
-  top: 5px;
-  left: 9px;
-  border-radius: 5px;
-}
-body .content .main-content .step-1 form .alert .alert-icon .part-2 {
-  background-color: white;
-  width: 2px;
-  height: 6px;
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  border-radius: 5px;
-}
-body .content .main-content .step-1 form .alert .alert-text {
+body .content .main-content .step-1 form .info .info-text {
+  padding-top: 3px;
   font-family: "nanitosans-semibold";
   font-size: 14px;
   color: #3F8CFF;
@@ -180,8 +293,17 @@ body .content .main-content .step-1 form .pass-input-group {
 }
 body .content .main-content .step-1 form .pass-input-group .eye-icons {
   position: absolute;
-  top: 8.5px;
   right: 20px;
+}
+@media (min-width: 576px) {
+  body .content .main-content .step-1 form .pass-input-group .eye-icons {
+    top: 8.5px;
+  }
+}
+@media (max-width: 575.98px) {
+  body .content .main-content .step-1 form .pass-input-group .eye-icons {
+    top: 3px;
+  }
 }
 body .content .main-content .step-1 form .pass-input-group .eye-icons .bi {
   font-family: "nanitosans-bold";
@@ -199,7 +321,7 @@ body .content .main-content .step-2 form .form-check .form-check-input:checked {
   background-color: transparent;
   background-image: url("../assets/imgs/fill.svg");
   background-size: 10px 10px;
-  background-position: 2px 2px;
+  background-position: center center;
 }
 body .content .main-content .step-2 form .form-check .form-check-label {
   font-size: 16px;
@@ -207,9 +329,21 @@ body .content .main-content .step-2 form .form-check .form-check-label {
 }
 body .content .main-content .step-3 form .group-btns .btn-option {
   width: 24%;
-  font-size: 14px;
-  color: #7D8592;
-  cursor: default;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  body .content .main-content .step-3 form .group-btns .btn-option {
+    top: 8.5px;
+    font-size: 14px;
+    color: #7D8592;
+  }
+}
+@media (max-width: 575.98px) {
+  body .content .main-content .step-3 form .group-btns .btn-option {
+    top: 3px;
+    font-size: 12px;
+    color: #7D8592;
+  }
 }
 body .content .main-content .step-3 form .group-btns .btn-option:hover {
   border-color: #8ea5d4;
@@ -222,11 +356,20 @@ body .content .main-content .step-4 form .add-another-member {
   font-family: "nanitosans-semibold";
   font-size: 16px;
   color: #3F8CFF;
-  cursor: default;
+  cursor: pointer;
 }
 body .content .main-content .bottom-section {
   width: 100%;
-  margin-top: 60px;
+}
+@media (min-width: 575.98px) {
+  body .content .main-content .bottom-section {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  body .content .main-content .bottom-section {
+    margin-top: 30px;
+  }
 }
 body .content .main-content .bottom-section hr {
   width: 100%;
